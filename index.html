@@ -1,13 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<!-- external -->
-<script type="text/javascript">
-    window.cookieconsent_options = {"message":"Unsurprisingly, this website uses cookies for ads and traffic analysis.","dismiss":"Got it!","learnMore":"Learn more","link":"//orteil.dashnet.org/cookieconsentpolicy.html","target":"_blank","theme":"//orteil.dashnet.org/cookieconsent.css","domain":"dashnet.org"};
-</script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
-
 <!--<link href="https://fonts.googleapis.com/css?family=Kavoon&subset=latin,latin-ext" rel="stylesheet" type="text/css">-->
 <link href='https://fonts.googleapis.com/css?family=Merriweather:900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
@@ -56,6 +49,13 @@ var App=typeof App==='undefined'?0:App;
 </script>
 <!-- /ad -->
 
+<link rel="stylesheet" href="/jsconsole/build/static/css/main.e714727a.css" />
+<style>
+  .prompt {
+    color: black !important;
+  }
+</style>
+
 <!--[if IE]>
 <style type="text/css">
 	#ifIE9{display:block;}
@@ -92,7 +92,7 @@ var App=typeof App==='undefined'?0:App;
 		</div>
 	</div>
 	<div id="game">
-		<div id="versionNumber" class="title"></div>
+		<div id="versionNumber" class="title" style="cursor:pointer" onclick="javascript:document.getElementById('drag').style.visibility='visible'"></div>
 		<script>document.getElementById('versionNumber').innerHTML='v. '+VERSION;</script>
 		<div id="offGameMessageWrap">
 			<div id="offGameMessage">
@@ -168,40 +168,6 @@ var App=typeof App==='undefined'?0:App;
 		</div>
 		
 		<div id="sectionRight" class="inset">
-			<!-- ad -->
-			<div class="ifNoAds" style="width:300px;text-align:center;padding:8px 0px;background:rgba(0,0,0,0.95);font-size:10px;opacity:0.5;text-shadow:0px 0px 2px #000,0px 1px 0px #000;text-align:center;">
-				Cookie Clicker is mainly supported by ads.<br>Consider unblocking our site or checking out our <a href="https://www.patreon.com/dashnet" target="_blank">Patreon</a>!
-			</div>
-			<div id="smallSupport" style="width:300px;text-align:center;padding-bottom:40px;background:rgba(0,0,0,0.5);position:relative;z-index:100;">
-				
-				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- Cookie Clicker Header Responsive -->
-				<ins class="adsbygoogle"
-					 style="display:block;margin:auto;width:300px;max-height:300px;overflow:hidden;"
-					 data-ad-client="ca-pub-8491708950677704"
-					 data-ad-slot="7077525342"
-					 data-ad-format="rectangle"
-					 data-full-width-responsive="true"></ins>
-				<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-				
-				<script>
-				document.addEventListener('DOMContentLoaded',function(){
-					setTimeout(function(){
-						var adSlot=document.querySelector("ins[data-ad-slot='7077525342']");
-						if(adSlot && adSlot.getAttribute('data-ad-status')=='unfilled')
-						{
-							var backfill=document.createElement('div');backfill.innerHTML='<iframe style="border:none;" src="https://serve.playsaurus.com/300x250.html" width="300" height="250" sandbox="allow-scripts allow-popups"></iframe>';
-							adSlot.parentNode.replaceChild(backfill,adSlot);
-						}
-					},3000);
-				});
-				</script>
-				
-				<div class="supportComment">^ Sponsored link ^</div>
-			</div>
-			<!-- /ad -->
 			<div id="store">
 				<div id="storeTitle" class="inset title zoneTitle">Store</div>
 				<div id="toggleUpgrades" class="storeSection upgradeBox"></div>
@@ -210,50 +176,14 @@ var App=typeof App==='undefined'?0:App;
 				<div id="upgrades" class="storeSection upgradeBox"></div>
 				<div id="products" class="storeSection"></div>
 			</div>
-			<!-- ad -->
-			<div id="detectAds" class="adBanner" style="background:transparent;width:1px;height:1px;"></div>
 			<div id="support" style="margin-top:130px;">
-				<div class="supportComment">v Sponsored links v</div>
 				<div style="position:relative;">
 				
 					<div style="position:relative;z-index:100;min-height:250px;">
-					
-						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-						<!-- Cookie Clicker Responsive -->
-						<ins class="adsbygoogle"
-							 style="display:block;margin:auto;"
-							 data-ad-client="ca-pub-8491708950677704"
-							 data-ad-slot="9780186019"
-							 data-ad-format="auto"
-							 data-full-width-responsive="true"></ins>
-						<script>
-						(adsbygoogle = window.adsbygoogle || []).push({});
-						</script>
-				
-						<script>
-						document.addEventListener('DOMContentLoaded',function(){
-							setTimeout(function(){
-								var adSlot=document.querySelector("ins[data-ad-slot='9780186019']");
-								if(adSlot && adSlot.getAttribute('data-ad-status')=='unfilled')
-								{
-									var backfill=document.createElement('div');backfill.innerHTML='<iframe style="border:none;" src="https://serve.playsaurus.com/300x600.html" width="300" height="600" sandbox="allow-scripts allow-popups"></iframe>';
-									adSlot.parentNode.replaceChild(backfill,adSlot);
-								}
-							},3000);
-						});
-						</script>
-						
-						<div style="height:16px;"></div>
-						
-						<!-- AdventureQuest Worlds banner -->
-						<a class="ad" id="aqad" href="http://www.aq.com/landing/cookie/?utm_campaign=AQW_CookieClicker&utm_source=CookieClicker" target="_blank" title="AdventureQuest Worlds" style="background:url(img/aqworldsbanner.jpg) no-repeat;width:300px;height:64px;display:block;position:relative;margin:0px auto;">
-						</a>
-						
 					</div>
 					
 				</div>
 			</div>
-			<!-- /ad -->
 		</div>
 		
 		<div id="tooltipAnchor"><div id="tooltip" class="framed" onMouseOut="Game.tooltip.hide();"></div></div>
@@ -262,6 +192,64 @@ var App=typeof App==='undefined'?0:App;
 	</div>
 
 </div>
+
+<div id="drag" style="position:absolute;z-index:999999;background:white;visibility:hidden">
+      <div id="dragheader" style="width:25vw;min-width:500px;height:30px;background:lightgray;color:white;cursor:pointer"></div>
+      <div id="root" style="width:25vw;min-width:500px;height:400px;overflow:scroll;background:white"></div>
+</div>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+<script src="/jsconsole/build/static/js/main.e3de6512.js"></script>
+
+<script>
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+dragElement(document.getElementById("drag"));
+
+document.addEventListener('keydown', (e) => {
+    if (e.keyCode === 13) {
+        document.getElementById('root').scrollTo(0, 9999999);
+    }
+});
+</script>
 
 </body>
 </html>
