@@ -92,7 +92,7 @@ var App=typeof App==='undefined'?0:App;
 		</div>
 	</div>
 	<div id="game">
-		<div id="versionNumber" class="title" style="cursor:pointer" onclick="javascript:document.getElementById('drag').style.visibility='visible'"></div>
+		<div id="versionNumber" class="title" style="cursor:pointer" onclick="javascript:document.getElementById('drag').style.visibility='visible';document.querySelector('.cli').focus()"></div>
 		<script>document.getElementById('versionNumber').innerHTML='v. '+VERSION;</script>
 		<div id="offGameMessageWrap">
 			<div id="offGameMessage">
